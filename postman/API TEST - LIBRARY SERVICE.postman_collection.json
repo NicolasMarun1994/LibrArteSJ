@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "879828e2-524f-44a1-bc3c-84f2c34ca207",
+		"name": "API TEST - LIBRARY SERVICE",
+		"description": "# 🔎 LibrArteSJ - Library Service API\n\nEsta colección contiene las pruebas para el microservicio de búsqueda y consultas.\n\n- 🔧 Modifica la variable `base_url` para apuntar al servicio desplegado.\n- 🧩 Realiza pruebas de búsquedas y consultas combinadas.\n- 🔗 Es el punto de integración de los demás microservicios.\n\nGracias por explorar esta parte del proyecto.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33815191"
+	},
+	"item": [
+		{
+			"name": "GET BOOK BY TITLE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9004/library/get-book-by-title/direccion y motivacion de las redes de distribucion comercial"
+			},
+			"response": []
+		},
+		{
+			"name": "GET BOOK/SEARCH BY TITLE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9004/library/get-book-by-title/direccion y motivacion de las redes de distribucion comercial"
+			},
+			"response": []
+		},
+		{
+			"name": "GET AUTHOR BY NAME",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9004/library/get-author-by-name/henrik ibsen"
+			},
+			"response": []
+		},
+		{
+			"name": "GET/SEARCH AUTHOR BY NAME",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9004/library/search-author-by-name/ibsen"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1"
+		},
+		{
+			"key": "base_url",
+			"value": "https://postman-rest-api-learner.glitch.me/"
+		}
+	]
+}
