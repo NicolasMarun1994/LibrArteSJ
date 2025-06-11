@@ -44,7 +44,7 @@ git clone https://github.com/NicolasMarun1994/LibrArteSJ.git
 - Subida del proyecto a un entorno de prueba en la nube
 - Otras mejoras generales
 
-## ## ☁️ Despliegue futuro
+## ☁️ Despliegue futuro
 
 Está previsto subir la aplicación a un servidor en la nube, junto con una base de datos MySQL remota,
 para facilitar las pruebas y demostraciones sin necesidad de entorno local.
