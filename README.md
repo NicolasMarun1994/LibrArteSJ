@@ -21,14 +21,12 @@ Proyecto backend desarrollado en **Java** con **Spring Boot**, basado en arquite
 
 ## ▶️ Cómo ejecutar el proyecto localmente
 
-1. Clonar el repositorio:
-´´´bash
-git clone https://github.com/NicolasMarun1994/LibrArteSJ.git
-
-2. Configurar la base de datos MySQL (por ejemplo, con WAMPP).
-3. Modificar las credenciales de base de datos en los archivos application.properties de cada servicio.
-4. Levantar primero el servicio eureka-sv.
-5. Luego iniciar los servicios author-service, book-service y library-service.
+1. Clonar el repositorio:	
+	git clone https://github.com/NicolasMarun1994/LibrArteSJ.git
+2. Configurar la base de datos MySQL (Yo use WAMPP).
+3. Modificar las credenciales de base de datos en los archivos `application.properties` de cada servicio.
+4. Levantar primero el servicio `eureka-sv`.
+5. Luego iniciar los servicios `author-service`, `book-service` y `library-service`.
 
 ## 🔎 Funcionalidades principales
 
@@ -37,22 +35,28 @@ git clone https://github.com/NicolasMarun1994/LibrArteSJ.git
 - Buscar libros por autor (nombre o apellido)
 - Relacionar libros con autores por ID
 
+## 🐳 Dockerización local
+
+	El sistema fue dockerizado y probado exitosamente en entorno local, utilizando contenedores para cada microservicio y la base de datos MySQL. 
+	Esto permite levantar toda la aplicación de forma automatizada con Docker Compose.
+	Por el momento, las imágenes y archivos necesarios no se encuentran en el repositorio, ya que el proyecto aún no ha sido desplegado en un entorno con soporte para contenedores. Sin embargo, está preparado para ello, y se incluirán cuando se realice el despliegue del mismo.
+
 ## 🧪 Pruebas con Postman
 
-Para facilitar las pruebas y exploración de los endpoints de los microservicios, se incluyen colecciones exportadas de Postman en la carpeta `/postman` del repositorio.
+El sistema ha sido **totalmente probado con Postman**. Todas las colecciones se incluyen en la carpeta `/postman` del repositorio, organizadas por servicio.
 
 ### Cómo usar las colecciones
 
 1. Abrir Postman.  
 2. Ir a la opción **Importar**.  
-3. Seleccionar el archivo `.json` correspondiente a la colección que querés probar dentro de la carpeta `/postman`.  
-4. Importar y ejecutar las solicitudes de la colección para probar los distintos endpoints.
+3. Seleccionar el archivo `.json` correspondiente.  
+4. Ejecutar las solicitudes de la colección para probar los distintos endpoints.
 
 ### Colecciones disponibles
 
-- `API TEST - AUTHOR SERVICE.postman_collection.json` — Endpoints para gestión de autores.  
-- `API TEST - BOOK SERVICE.postman_collection` — Endpoints para gestión de libros.  
-- `API TEST - LIBRARY SERVICE.postman_collection.json` — Endpoints para búsquedas centralizadas.
+- 📘 `API TEST - AUTHOR SERVICE` — Endpoints para gestión de autores.  
+- 📗 `API TEST - BOOK SERVICE` — Endpoints para gestión de libros.  
+- 📙 `API TEST - LIBRARY SERVICE` — Endpoints para búsquedas centralizadas.
 
 ## 🚧 Próximamente se implementará
 
@@ -63,5 +67,5 @@ Para facilitar las pruebas y exploración de los endpoints de los microservicios
 
 ## ☁️ Despliegue futuro
 
-Está previsto subir la aplicación a un servidor en la nube, junto con una base de datos MySQL remota,
-para facilitar las pruebas y demostraciones sin necesidad de entorno local.
+Está previsto subir la aplicación a un servidor en la nube, junto con una base de datos MySQL remota.
+Por el momento, el sistema puede ejecutarse localmente y está 100% funcional y probado.
