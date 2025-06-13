@@ -37,9 +37,9 @@ Proyecto backend desarrollado en **Java** con **Spring Boot**, basado en arquite
 
 ## 🐳 Dockerización local
 
-	El sistema fue dockerizado y probado exitosamente en entorno local, utilizando contenedores para cada microservicio y la base de datos MySQL. 
-	Esto permite levantar toda la aplicación de forma automatizada con Docker Compose.
-	Por el momento, las imágenes y archivos necesarios no se encuentran en el repositorio, ya que el proyecto aún no ha sido desplegado en un entorno con soporte para contenedores. Sin embargo, está preparado para ello, y se incluirán cuando se realice el despliegue del mismo.
+El sistema fue dockerizado y probado exitosamente en entorno local, utilizando contenedores para cada microservicio y la base de datos MySQL. 
+Esto permite levantar toda la aplicación de forma automatizada con Docker Compose.
+Por el momento, las imágenes y archivos necesarios no se encuentran en el repositorio, ya que el proyecto aún no ha sido desplegado en un entorno con soporte para contenedores. Sin embargo, está preparado para ello, y se incluirán cuando se realice el despliegue del mismo.
 
 ## 🧪 Pruebas con Postman
 
