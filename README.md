@@ -23,10 +23,16 @@ Proyecto backend desarrollado en **Java** con **Spring Boot**, basado en arquite
 
 1. Clonar el repositorio:	
 	git clone https://github.com/NicolasMarun1994/LibrArteSJ.git
-2. Configurar la base de datos MySQL (Yo use WAMPP).
+	
+2. Configurar la base de datos MySQL (Yo use WAMPP).   
 3. Modificar las credenciales de base de datos en los archivos `application.properties` de cada servicio.
-4. Levantar primero el servicio `eureka-sv`.
-5. Luego iniciar los servicios `author-service`, `book-service` y `library-service`.
+4. Crear previamente las tablas necesarias para cada microservicio en la base de datos. Esto puede hacerse:
+	- De forma manual: 
+		> `author_service` para el microservicio de autores  
+		> `book_service` para el microservicio de libros
+		
+5. Levantar primero el servicio `eureka-sv`.
+6. Luego iniciar los servicios `author-service`, `book-service` y `library-service`.
 
 ## 🔎 Funcionalidades principales
 
@@ -60,8 +66,8 @@ El sistema ha sido **totalmente probado con Postman**. Todas las colecciones se 
 
 ## 🚧 Próximamente se implementará
 
-- Mejorar las validaciones de entrada
-- Mejorar el manejo de errores personalizado
+- Mejorar las validaciones de entrada (hacerlas más robustas)
+- Mejorar el manejo de errores usando el manejo personalizado
 - Subida del proyecto a un entorno de prueba en la nube
 - Otras mejoras generales
 
